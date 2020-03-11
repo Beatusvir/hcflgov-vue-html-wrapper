@@ -12,6 +12,11 @@ export const routes = [
     component: Home
   },
   {
+    path: '/navbar',
+    name: 'Navbar',
+    component: () => import('../../components/Navbar/Navbar.vue')
+  },
+  {
     path: '/newsroom',
     name: 'Newsroom',
     component: () => import('../views/Newsroom.vue')
